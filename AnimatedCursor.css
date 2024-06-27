@@ -1,0 +1,19 @@
+/* Custom cursor style */
+.cursor {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fefefe;
+  border-radius: 100%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 999999;
+  mix-blend-mode: difference;
+}
+
+/* Hide cursor on small screens */
+@media (max-width: 768px) {
+  .cursor {
+    display: none;
+  }
+}
